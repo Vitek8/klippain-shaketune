@@ -63,12 +63,12 @@ function check_download {
     shaketunebasename="$(basename ${K_SHAKETUNE_PATH})"
 
     if [ ! -d "${K_SHAKETUNE_PATH}" ]; then
-        # echo "[DOWNLOAD] Downloading Klippain Shake&Tune module repository..."
+        echo "[DOWNLOAD] Downloading Klippain Shake&Tune module repository..."
         # if git -C $shaketunedirname clone git@github.com:Frix-x/klippain-shaketune.git $shaketunebasename; then
         #     chmod +x ${K_SHAKETUNE_PATH}/install.sh
         #     printf "[DOWNLOAD] Download complete!\n\n"
         # else
-        echo "[ERROR] Download of Klippain Shake&Tune module git repository failed!"
+        # echo "[ERROR] Download of Klippain Shake&Tune module git repository failed!"
         #     exit -1
         # fi
     else
