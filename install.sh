@@ -68,7 +68,7 @@ function check_download {
         #     chmod +x ${K_SHAKETUNE_PATH}/install.sh
         #     printf "[DOWNLOAD] Download complete!\n\n"
         # else
-        #     echo "[ERROR] Download of Klippain Shake&Tune module git repository failed!"
+        echo "[ERROR] Download of Klippain Shake&Tune module git repository failed!"
         #     exit -1
         # fi
     else
