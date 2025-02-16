@@ -160,7 +160,7 @@ printf "=============================================\n\n"
 preflight_checks
 check_download
 setup_venv
-# link_extension
+link_extension
 # link_module
 # add_updater
 # restart_klipper
