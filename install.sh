@@ -1,7 +1,7 @@
 #!/bin/bash
 
-USER_CONFIG_PATH="${HOME}/klipper_config"
-MOONRAKER_CONFIG="${HOME}/klipper_config/moonraker.conf"
+USER_CONFIG_PATH="${HOME}/printer_data"
+MOONRAKER_CONFIG="${HOME}/printer_data/moonraker.conf"
 KLIPPER_PATH="${HOME}/klipper"
 KLIPPER_VENV_PATH="${KLIPPER_VENV:-${HOME}/klippy-env}"
 
