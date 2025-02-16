@@ -152,7 +152,7 @@ function restart_moonraker {
 
 
 printf "\n=============================================\n"
-echo "- Klippain Shake&Tune module install script -"
+echo "- Klippain Shake&Tune module install script - HAKUUUNAMATATA"
 printf "=============================================\n\n"
 
 
