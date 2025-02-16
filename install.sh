@@ -89,8 +89,8 @@ function setup_venv {
 
     source "${KLIPPER_VENV_PATH}/bin/activate"
     echo "[SETUP] Installing/Updating K-Shake&Tune dependencies..."
-    pip install --upgrade pip
-    pip install -r "${K_SHAKETUNE_PATH}/requirements.txt"
+    pip3.10 install --upgrade pip
+    pip3.10 install -r "${K_SHAKETUNE_PATH}/requirements.txt"
     deactivate
     printf "\n"
 }
