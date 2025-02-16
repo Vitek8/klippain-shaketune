@@ -1,7 +1,7 @@
 #!/bin/bash
 
-USER_CONFIG_PATH="${HOME}/printer_data/config"
-MOONRAKER_CONFIG="${HOME}/printer_data/config/moonraker.conf"
+USER_CONFIG_PATH="${HOME}/klipper_config"
+MOONRAKER_CONFIG="${HOME}/klipper_config/moonraker.conf"
 KLIPPER_PATH="${HOME}/klipper"
 KLIPPER_VENV_PATH="${KLIPPER_VENV:-${HOME}/klippy-env}"
 
@@ -63,14 +63,14 @@ function check_download {
     shaketunebasename="$(basename ${K_SHAKETUNE_PATH})"
 
     if [ ! -d "${K_SHAKETUNE_PATH}" ]; then
-        echo "[DOWNLOAD] Downloading Klippain Shake&Tune module repository..."
-        if git -C $shaketunedirname clone git@github.com:Frix-x/klippain-shaketune.git $shaketunebasename; then
-            chmod +x ${K_SHAKETUNE_PATH}/install.sh
-            printf "[DOWNLOAD] Download complete!\n\n"
-        else
-            echo "[ERROR] Download of Klippain Shake&Tune module git repository failed!"
-            exit -1
-        fi
+        # echo "[DOWNLOAD] Downloading Klippain Shake&Tune module repository..."
+        # if git -C $shaketunedirname clone git@github.com:Frix-x/klippain-shaketune.git $shaketunebasename; then
+        #     chmod +x ${K_SHAKETUNE_PATH}/install.sh
+        #     printf "[DOWNLOAD] Download complete!\n\n"
+        # else
+        #     echo "[ERROR] Download of Klippain Shake&Tune module git repository failed!"
+        #     exit -1
+        # fi
     else
         printf "[DOWNLOAD] Klippain Shake&Tune module repository already found locally. Continuing...\n\n"
     fi
@@ -157,11 +157,11 @@ printf "=============================================\n\n"
 
 
 # Run steps
-preflight_checks
+# preflight_checks
 check_download
-setup_venv
-link_extension
-link_module
+# setup_venv
+# link_extension
+# link_module
 add_updater
 restart_klipper
 restart_moonraker
