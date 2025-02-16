@@ -159,7 +159,7 @@ printf "=============================================\n\n"
 # Run steps
 preflight_checks
 check_download
-# setup_venv
+setup_venv
 link_extension
 link_module
 add_updater
